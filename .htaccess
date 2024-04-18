@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^index.html$ index.php [L]
+
+RewriteRule ^([a-zA-Z0-9]+).html$ index.php?act=$1 [L]
+
+RewriteRule ^sanpham/danhmuc/([0-9]+).html$ index.php?act=sanpham&id_danhmuc=$1 [L]
+
+RewriteRule ^chitietsanpham/([0-9]+).html$ index.php?act=chitietsanpham&id=$1 [L]
